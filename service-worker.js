@@ -1,16 +1,17 @@
-const CACHE_NAME = 'expense-manager-v2';
 const urlsToCache = [
-    '/',
-    '/index.html',
-    '/styles.css',
-    '/app-fixed.js',
-    '/firebase-service.js',
+    './',
+    './index.html',
+    './styles.css',
+    './app-fixed.js',
+    './firebase-service.js',
+    './manifest.json',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
     'https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js',
     'https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js',
     'https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js',
     'https://www.gstatic.com/firebasejs/9.22.0/firebase-storage-compat.js',
-    'icon-192x192.png'
+    './icon-192x192.png',
+    './icon-512x512.png'
 ];
 
 // Install Service Worker
@@ -83,3 +84,4 @@ self.addEventListener('activate', event => {
         })
     );
 });
+
